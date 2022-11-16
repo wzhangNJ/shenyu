@@ -174,7 +174,7 @@ public class NacosClientServerRegisterRepository implements ShenyuClientServerRe
     }
 
     private void publishMetadata(final String data) {
-        LOGGER.info("publish metadata: {}", data);
+        LOGGER.info("publish meta data: {}", data);
         publisher.publish(Lists.newArrayList(GsonUtils.getInstance().fromJson(data, MetaDataRegisterDTO.class)));
     }
 
